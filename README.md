@@ -1,46 +1,55 @@
-# Demo - Quản lý công ty, kho và hàng lỗi
+Demo - Company, Warehouse, and Defective Products Management
+## Overview
+This module implements the following features:
 
-## Tổng quan
+Control over subsidiaries purchasing from external suppliers
 
-Module này triển khai các tính năng:
-- Kiểm soát công ty con mua hàng từ nhà cung cấp ngoài
-- Quản lý hàng lỗi với 3 loại: hàng bỏ, hàng sửa chữa, hàng trả
-- Tự động chọn kho gần nhất dựa trên GPS
+Management of defective products with three categories: discard, repair, return
 
-## Tính năng
+Automatically select the nearest warehouse based on GPS
 
-- **Kiểm soát mua hàng:** Ngăn công ty con mua hàng từ nhà cung cấp ngoài hệ thống.
-- **Quản lý hàng lỗi:** Phân loại hàng lỗi thành ba loại: bỏ, sửa chữa, trả lại.
-- **Chọn kho gần nhất:** Tự động xác định và chọn kho gần nhất dựa trên vị trí GPS.
+## Features
+Purchase Control: Prevent subsidiaries from purchasing from suppliers outside the system.
 
-## Cài đặt
+Defective Product Management: Classify defective items into three types: discard, repair, return.
 
-1. Tải module về thư mục `custom_vendor_odoo17`.
-2. Đảm bảo các module phụ thuộc đã được cài đặt: `base`, `purchase`, `stock`, `sale_management`, `contacts`.
-3. Cài đặt module thông qua Apps trong Odoo.
+Nearest Warehouse Selection: Automatically determine and select the nearest warehouse based on GPS location.
 
-## Cấu hình
+## Installation
+Download the module to the custom_vendor_odoo17 directory.
 
-- Truy cập các menu liên quan trong Inventory để cấu hình và sử dụng các tính năng của module.
-- Phân quyền truy cập thông qua các rule bảo mật đã được định nghĩa.
+Ensure all required dependencies are installed: base, purchase, stock, sale_management, contacts.
 
-## Dữ liệu
+Install the module via the Apps menu in Odoo.
 
-Module bao gồm các file cấu hình:
-- `security/ir.model.access.csv`
-- `security/security_rules.xml`
-- `views/res_partner_views.xml`
-- `views/stock_scrap_views.xml`
-- `views/sale_order_views.xml`
-- `views/stock_menu.xml`
-- `views/warehouse_finder_views.xml`
+## Configuration
+Access the relevant menus in the Inventory module to configure and use the features.
 
-## Thông tin
+Manage access rights via pre-defined security rules.
 
-- **Phiên bản:** 1.0
-- **Tác giả:** Nhóm 1
-- **Danh mục:** Inventory/Inventory
+## Data
+The module includes the following configuration files:
+
+security/ir.model.access.csv
+
+security/security_rules.xml
+
+views/res_partner_views.xml
+
+views/stock_scrap_views.xml
+
+views/sale_order_views.xml
+
+views/stock_menu.xml
+
+views/warehouse_finder_views.xml
+
+## Information
+Version: 1.0
+
+Author: Team 1
+
+Category: Inventory/Inventory
 
 ## License
-
 This module is licensed under the AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
