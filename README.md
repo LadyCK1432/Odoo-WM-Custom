@@ -1,4 +1,4 @@
-Demo - Company, Warehouse, and Defective Products Management
+Demo Odoo Community (Inventory Custom) - Company, Warehouse, and Defective Products Management
 ## Overview
 This module implements the following features:
 
@@ -47,7 +47,7 @@ views/warehouse_finder_views.xml
 ## Information
 Version: 1.0
 
-Author: Team 1
+Author: Nguyen Tran Quang Nhat
 
 Category: Inventory/Inventory
 
